@@ -18,7 +18,10 @@ type Query {
   note("The ID of the note you want data for" id: ID!): Note
 
   "Get all notes"
-  notes: [Note]
+  notes(
+    "The boolean value for the archived state of the notes"
+    includeArchived: Boolean
+  ): [Note]
 }
 
 "A note"
