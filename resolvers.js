@@ -1,11 +1,13 @@
 import { UserInputError } from 'apollo-server';
 import cuid from 'cuid';
-
-const savedNotes = [];
+import { getNotes } from './notes.js';
+import { saveNotes } from './notes.js';
 
 export default {
   Mutation: {
-    createNote(_, args) {
+    async createNote(_, args) {
+      const savedNotes = await getNotes();
+
       const { note } = args;
 
       const newNote = { ...note };
@@ -30,13 +32,17 @@ export default {
 
       savedNotes.push(newNote);
 
+      await saveNotes(savedNotes);
+
       return newNote;
     },
 
     //Update Note mutation
 
-    updateNote(_, args) {
+    async updateNote(_, args) {
       const { note, id } = args;
+
+      const savedNotes = await getNotes();
 
       const noteUpdate = savedNotes.find((savedNote) => savedNote.id === id);
 
@@ -65,12 +71,15 @@ export default {
         }
       }
 
+      await saveNotes(savedNotes);
       return updatedNote;
     },
 
     //Delete Note mutation
 
-    deleteNote(_, args) {
+    async deleteNote(_, args) {
+      let savedNotes = await getNotes();
+
       const { id } = args;
 
       const noteIndex = savedNotes.findIndex(
@@ -83,15 +92,21 @@ export default {
 
       const [removedNote] = savedNotes.splice(noteIndex, 1);
 
+      await saveNotes(savedNotes);
+
       return removedNote;
     },
   },
 
   Query: {
-    note(_, args) {
+    async note(_, args) {
+      const savedNotes = await getNotes();
+
       return savedNotes.find((note) => note.id === args.id);
     },
-    notes(_, args) {
+    async notes(_, args) {
+      const savedNotes = await getNotes();
+
       const { includeArchived } = args;
       if (includeArchived) {
         return savedNotes;

@@ -1,0 +1,30 @@
+[
+ {
+  "text": "Samle 1 edited",
+  "id": "cl25111x40000i0fv53gx8dgc",
+  "createdAt": "2022-04-18T18:04:30.329Z",
+  "updatedAt": "2022-04-18T19:18:23.787Z",
+  "isArchived": true
+ },
+ {
+  "text": "Sample 2",
+  "id": "cl2511bhj0001i0fv6jqxe8ns",
+  "createdAt": "2022-04-18T18:04:42.727Z",
+  "updatedAt": "2022-04-18T18:04:42.727Z",
+  "isArchived": false
+ },
+ {
+  "text": "Sample 3",
+  "id": "cl252251p0000b4fvb64i2ijf",
+  "createdAt": "2022-04-18T18:33:20.653Z",
+  "updatedAt": "2022-04-18T18:33:20.653Z",
+  "isArchived": false
+ },
+ {
+  "text": "Sample 4",
+  "id": "cl252nvar0000q4fveu2g0u44",
+  "createdAt": "2022-04-18T18:50:14.452Z",
+  "updatedAt": "2022-04-18T18:50:14.452Z",
+  "isArchived": false
+ }
+]
