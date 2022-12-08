@@ -1,30 +1,44 @@
 [
  {
-  "text": "Samle 1 edited",
-  "id": "cl25111x40000i0fv53gx8dgc",
-  "createdAt": "2022-04-18T18:04:30.329Z",
-  "updatedAt": "2022-04-18T19:18:23.787Z",
+  "text": "not archived",
+  "id": "cl2ywa0fz000398fvb5d6gnev",
+  "createdAt": "2022-05-09T15:44:35.519Z",
+  "updatedAt": "2022-12-08T19:38:25.456Z",
+  "isArchived": false
+ },
+ {
+  "text": "Archived!",
+  "id": "cl2ywacow000498fv4u82de8m",
+  "createdAt": "2022-05-09T15:44:51.392Z",
+  "updatedAt": "2022-05-09T15:45:15.933Z",
   "isArchived": true
  },
  {
-  "text": "Sample 2",
-  "id": "cl2511bhj0001i0fv6jqxe8ns",
-  "createdAt": "2022-04-18T18:04:42.727Z",
-  "updatedAt": "2022-04-18T18:04:42.727Z",
+  "text": "Archive Test",
+  "id": "cl2ywmo8v000798fvcpno830h",
+  "createdAt": "2022-05-09T15:54:26.239Z",
+  "updatedAt": "2022-05-09T22:45:52.428Z",
+  "isArchived": true
+ },
+ {
+  "text": "Sample 1\n",
+  "id": "cl2z9f0eq000898fve6vm7wx4",
+  "createdAt": "2022-05-09T21:52:23.763Z",
+  "updatedAt": "2022-12-08T19:38:33.456Z",
   "isArchived": false
  },
  {
-  "text": "Sample 3",
-  "id": "cl252251p0000b4fvb64i2ijf",
-  "createdAt": "2022-04-18T18:33:20.653Z",
-  "updatedAt": "2022-04-18T18:33:20.653Z",
+  "text": "test change 4\n",
+  "id": "cl2zaro83000998fvcriqfhp8",
+  "createdAt": "2022-05-09T22:30:14.115Z",
+  "updatedAt": "2022-12-08T19:37:15.621Z",
   "isArchived": false
  },
  {
-  "text": "Sample 4",
-  "id": "cl252nvar0000q4fveu2g0u44",
-  "createdAt": "2022-04-18T18:50:14.452Z",
-  "updatedAt": "2022-04-18T18:50:14.452Z",
-  "isArchived": false
+  "text": "Get Milk",
+  "id": "clbfhe2zi0001b6qi3q0408ts",
+  "createdAt": "2022-12-08T19:37:34.879Z",
+  "updatedAt": "2022-12-08T19:38:11.237Z",
+  "isArchived": true
  }
 ]
